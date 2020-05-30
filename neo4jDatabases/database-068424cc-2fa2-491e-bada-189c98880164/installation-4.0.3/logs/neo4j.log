@@ -1,0 +1,7 @@
+2020-05-30 21:11:38.024+0000 INFO  ======== Neo4j 4.0.3 ========
+2020-05-30 21:11:38.032+0000 INFO  Starting...
+2020-05-30 21:11:54.207+0000 INFO  Sending metrics to CSV file at D:\neo4j\neo4jDatabases\database-068424cc-2fa2-491e-bada-189c98880164\installation-4.0.3\metrics
+2020-05-30 21:11:54.247+0000 INFO  Bolt enabled on localhost:7687.
+2020-05-30 21:11:54.247+0000 INFO  Started.
+2020-05-30 21:11:54.515+0000 INFO  Server thread metrics have been registered successfully
+2020-05-30 21:11:55.959+0000 INFO  Remote interface available at http://localhost:7474/

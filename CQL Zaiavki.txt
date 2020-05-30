@@ -1,0 +1,17 @@
+Create(note1:Note {type:'A4', content:'This is my first note'})
+Create(note1:Note {type:'A3', content:'This is my second note'})
+Create(note1:Note {type:'A24', content:'This is my third note'})
+​Create(note1:Note {type:'A1', content:'This is my fourth note'})
+Create(note1:Note {type:'A4', content:'This is my final (fifth) note'})
+
+Create (user1:User { u_id:'1', username:'Miki', password:'123456', name:'Miki', lname:'Ivanova', email:'miv@abv.bg'})
+Create (user1:User { u_id:'2', username:'MikiP', password:'123456', name:'Miki',
+lname:'Petrova', email:'mpe@abv.bg'})
+Create (user1:User { u_id:'3', username:'MikiD', password:'123456', name:'Miki', lname:'Dimitrova', email:'mdi@abv.bg'})
+
+Match (usr:User), (note:Note) Where usr.u_id='1' and note.type ='A3' Create (usr) - [ write:Writen { time:'29.05.2020' }] -> (note) Return usr, note
+Match (usr:User), (note:Note) Where usr.u_id='2' and note.type ='A24' Create (usr) - [ write:Writen { time:'31.05.2020' }] -> (note) Return usr, note
+Match (usr:User), (note:Note) Where usr.u_id='3' and note.type ='A1' Create (usr) - [ write:Writen { time:'22.06.2020' }] -> (note) Return usr, note
+Match (usr:User), (note:Note) Where usr.u_id='3' and note.type ='A4' Create (usr) - [ write:Writen { time:'1.1.2020' }] -> (note) Return usr, note
+
+MATCH (n) RETURN n LIMIT 25
